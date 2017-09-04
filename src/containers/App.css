@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik-Regular.ttf"); }
+
+body {
+  color: #1d61d1;
+  font-family: 'Rubik', sans-serif; }
+
+html, body, #root, #wrapper, .App {
+  height: 100%;
+  margin: 0; }
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column; }
+
+h1 {
+  margin: 0; }
+
+.App-header {
+  position: relative;
+  height: 8%;
+  font-size: 2em;
+  margin: 0 auto; }
+
+#world-map {
+  width: 100%;
+  height: 90%; }
+
+#view-data {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 61%; }
+  #view-data #left-arrow-img {
+    max-width: 2%;
+    position: absolute;
+    left: 36%;
+    top: 20%; }
+  #view-data #info-card {
+    width: 20%;
+    text-align: left;
+    clear: both;
+    padding: 10px;
+    background-color: #ececec;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    #view-data #info-card h2 {
+      text-align: center;
+      margin: 0; }
+    #view-data #info-card .leftEl {
+      float: left;
+      font-weight: bold; }
+    #view-data #info-card .rightEl {
+      float: right; }
+    #view-data #info-card .message {
+      text-align: center;
+      font-weight: bold; }
