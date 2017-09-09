@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
 import WorldMap from '../components/WorldMap';
 import Header from'../components/Header';
 
@@ -8,7 +9,7 @@ class Home extends Component {
     return (
     	<div id="wrapper">
 		    <Header />
-		    <WorldMap />
+	    	<WorldMap />
 	    </div>
     );
   }

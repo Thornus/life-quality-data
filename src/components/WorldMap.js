@@ -33,10 +33,13 @@ class WorldMap extends Component {
           }
       },
       onRegionClick: function(e, code) {
-        try {
-          that.setState({ redirect: true, code: code })
-        }
-        catch(err) {}
+        that.worldMap.className += "fade-out";
+        setTimeout(() => {
+          try {
+            that.setState({ redirect: true, code: code })
+          }
+          catch(err) {}
+        }, 500);
       }
     });
   }
@@ -52,7 +55,7 @@ class WorldMap extends Component {
     }
 
     return (
-      <div id="world-map">
+      <div id="world-map" ref={ (worldMap) => { this.worldMap = worldMap; }}>
       </div>
     );
   }

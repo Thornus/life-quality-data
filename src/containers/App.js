@@ -11,7 +11,8 @@ class App extends Component {
         <h1>LIFE QUALITY DATA</h1>
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/ViewData/:code' component={ViewData}/>
+          <Route exact path='/ViewData/:code' component={ViewData}/>
+          <Route exact path='*' component={Home}/>
         </Switch>
       </div>
     );

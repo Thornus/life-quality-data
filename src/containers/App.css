@@ -1,3 +1,22 @@
+.SlideInFromAbove-appear {
+  opacity: 0;
+  animation: SlideInFromAbove ease-out 1s; }
+
+.SlideInFromAbove-appear.SlideInFromAbove-appear-active {
+  opacity: 1; }
+
+@keyframes SlideInFromAbove {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -100%); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .5s ease-out; }
+
 @font-face {
   font-family: 'Rubik';
   src: url("../fonts/Rubik-Regular.ttf"); }
@@ -34,29 +53,39 @@ h1 {
   top: 50%;
   transform: translate(-50%, -50%);
   height: 61%; }
-  #view-data #left-arrow-img {
-    max-width: 2%;
-    position: absolute;
-    left: 36%;
-    top: 20%; }
-  #view-data #info-card {
-    width: 20%;
-    text-align: left;
-    clear: both;
-    padding: 10px;
-    background-color: #ececec;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
-    #view-data #info-card h2 {
-      text-align: center;
-      margin: 0; }
-    #view-data #info-card .leftEl {
-      float: left;
-      font-weight: bold; }
-    #view-data #info-card .rightEl {
-      float: right; }
-    #view-data #info-card .message {
-      text-align: center;
-      font-weight: bold; }
+
+#view-data #left-arrow-img {
+  max-width: 2%;
+  position: absolute;
+  left: 36%;
+  top: 20%;
+  transition: transform .3s ease-out; }
+
+#view-data #left-arrow-img:hover {
+  transform: translate(-15%, 0); }
+
+#view-data #info-card {
+  width: 20%;
+  text-align: left;
+  clear: both;
+  padding: 10px;
+  background-color: #ececec;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+#view-data #info-card h2 {
+  text-align: center;
+  margin: 0; }
+
+#view-data #info-card .leftEl {
+  float: left;
+  font-weight: bold; }
+
+#view-data #info-card .rightEl {
+  float: right; }
+
+#view-data #info-card .message {
+  text-align: center;
+  font-weight: bold; }

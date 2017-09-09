@@ -1,0 +1,25 @@
+.SlideInFromAbove-appear {
+  opacity: 0;
+  animation: SlideInFromAbove ease-out 1s;
+}
+
+.SlideInFromAbove-appear.SlideInFromAbove-appear-active {
+  opacity: 1;
+}
+
+@keyframes SlideInFromAbove{
+  0% {
+    opacity:0;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    opacity:1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+
