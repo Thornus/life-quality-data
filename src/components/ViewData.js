@@ -8,12 +8,11 @@ class ViewData extends Component {
   render() {
     return (
       <div id="view-data">
-        <Link to="/"><img id="left-arrow-img" src={leftArrowImg}/></Link>
+        <Link to="/" id="left-arrow-link"><img src={leftArrowImg}/></Link>
 
         <CSSTransitionGroup
         transitionAppear={true}
         transitionAppearTimeout={1000}
-        transitionEnterTimeout={600}
         transitionLeaveTimeout={200}
         transitionName="SlideInFromAbove"> 
           <InfoCard countryCode={this.props.match.params.code}/>
