@@ -15,10 +15,6 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
     <title>Life Quality Data</title>
   </head>
   <body>
@@ -27,4 +23,21 @@
     </noscript>
     <div id="root"></div>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCSn4AnoCP9Zr9Mg6uvSxjwe_I-IE7U0DY",
+      authDomain: "life-quality-data.firebaseapp.com",
+      databaseURL: "https://life-quality-data.firebaseio.com",
+      projectId: "life-quality-data",
+      storageBucket: "life-quality-data.appspot.com",
+      messagingSenderId: "719326532471"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </html>

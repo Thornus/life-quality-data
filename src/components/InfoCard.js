@@ -58,7 +58,6 @@ class InfoCard extends Component {
   }
 
 	render() {
-    console.log('rendering');
 		if(this.state.noInternet) {
 		  return <div id="info-card"><p className="message">CHECK YOUR INTERNET CONNECTION</p></div>;
 		}
