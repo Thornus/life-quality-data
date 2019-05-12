@@ -1,3 +1,5 @@
+![Life Quality Data Home](/screenshots/home.png)
+
 # Life Quality Data (OECD)
 ## Description
 Life Quality Data is a web application which shows data of OECD countries.
